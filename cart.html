@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Karma Shop</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/image/favico.ico" type="image/x-icon">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap v5.3.0 css -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <!-- Font Awesome Free v6.4.2 css -->
+    <link rel="stylesheet" href="css/vendor/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Start header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/image/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category.html">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item" id="login-btn">
+                            <a class="nav-link" href="login.html">
+                                LOGIN
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-row align-items-center">
+                        <li class="nav-item nav-item--cart">
+                            <a class="nav-link active" href="cart.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-item--search">
+                            <button class="btn nav-link" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                                <i class="fa fa-search"></i></button>
+                        </li>
+                    </ul>
+                    <div class="offcanvas nav-bar--search-filed offcanvas-start" data-bs-scroll="true"
+                        data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                        aria-labelledby="offcanvasScrollingLabel">
+                        <div class="container h-100">
+                            <div class="d-flex h-100 align-items-center">
+                                <input type="text" placeholder="Search Here"
+                                    class="w-100 h-100 bg-transparent border-0 text-white fs-4">
+                                <a href="#"><i class="fa fa-search text-white" aria-hidden="true"></i></a>
+                                <button type="button" class="btn fs-4 text-white ms-3" data-bs-dismiss="offcanvas"
+                                    aria-label="Close">X</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header Section -->
+    <!-- Start head page Section -->
+    <section class="head__page">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+                <div class="head__page--content">
+                    <h1>Shopping Cart</h1>
+                    <div class="d-flex">
+                        <a href="index.html">Home <i class="fa fa-arrow-right"></i></a>
+                        <a href="cart.html">Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End head page Section -->
+    <!-- Start Table cart section -->
+    <section class="table__cart section-padding">
+        <div class="container">
+            <table class="w-100">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cartBody">
+                    <!-- js file here -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            <h4 class="text-start">subtotal</h4>
+                        </td>
+                        <td colspan="2">
+                            <h4 class="text-end" id="total"></h4>
+                        </td>
+                        </tr>
+                    <!-- js file here -->
+                </tfoot>
+            </table>
+            <div class="cart__coupon-area">
+                <div class="d-flex flex-column flex-md-row justify-content-between row-gap-3">
+                    <a class="gray-btn">update cart</a>
+                    <div class="d-flex flex-column flex-md-row row-gap-3">
+                        <input type="text" name="" id="" placeholder="Coupon Code"
+                            class="input-field w-auto mb-0 rounded-0">
+                        <a href="#" class="main-btn rounded-0">apply</a>
+                        <a href="#" class="gray-btn rounded-0">close coupon</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__shipping">
+                <h4>shipping</h4>
+                <form action="#">
+                    <ul class="cart__list--plan">
+                        <li>
+                            <input type="radio" name="shipping-plan" id="shipping-plan-1">
+                            <label for="shipping-plan-1">Flat Rate: $5.00</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="shipping-plan" id="shipping-plan-2">
+                            <label for="shipping-plan-2">Free Shipping</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="shipping-plan" id="shipping-plan-3">
+                            <label for="shipping-plan-3">Flat Rate: $10.00</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="shipping-plan" id="shipping-plan-4">
+                            <label for="shipping-plan-4">Local Delivery: $2.00</label>
+                        </li>
+                    </ul>
+                    <h6>Calculate Shipping</h6>
+                    <div class="dropdown mt-3">
+                        <a class="gray-btn dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Bangladesh
+                        </a>
+                        <ul class="dropdown-menu select__menu">
+                            <li><a class="dropdown-item" href="#">Bangladesh</a></li>
+                            <li><a class="dropdown-item" href="#">India</a></li>
+                            <li><a class="dropdown-item" href="#">Pakistan</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown mt-3">
+                        <a class="gray-btn dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Select a State
+                        </a>
+                        <ul class="dropdown-menu select__menu">
+                            <li><a class="dropdown-item" href="#">Select a State</a></li>
+                            <li><a class="dropdown-item" href="#">Select a State</a></li>
+                            <li><a class="dropdown-item" href="#">Select a State</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" name="" id="" class="gray-btn text-start mt-3">
+                    <button type="submit" class="gray-btn d-block mt-3">UPDATE DETAILS</button>
+                </form>
+            </div>
+            <div class="d-flex flex-wrap">
+                <a href="category.html" class="gray-btn rounded-0">CONTINUE SHOPPING</a>
+                <a href="checkout.html" class="main-btn rounded-0">PROCEED TO CHECKOUT</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Table cart section -->
+    <!-- Start footer Section -->
+    <footer class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single__footer--widget">
+                        <h6>About Us</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single__footer--widget">
+                        <h6>Newsletter</h6>
+                        <p>Stay update with our latest</p>
+                        <form action="#">
+                            <div class="d-flex mt-3">
+                                <input type="email" name="" id="">
+                                <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single__footer--widget">
+                        <h6>Instragram Feed</h6>
+                        <ul class="d-flex flex-wrap ">
+                            <li><img src="assets/image/i1.jpg" alt=""></li>
+                            <li><img src="assets/image/i2.jpg" alt=""></li>
+                            <li><img src="assets/image/i3.jpg" alt=""></li>
+                            <li><img src="assets/image/i4.jpg" alt=""></li>
+                            <li><img src="assets/image/i5.jpg" alt=""></li>
+                            <li><img src="assets/image/i6.jpg" alt=""></li>
+                            <li><img src="assets/image/i7.jpg" alt=""></li>
+                            <li><img src="assets/image/i8.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="single__footer--widget">
+                        <h6>Follow Us</h6>
+                        <p>Let us be social</p>
+                        <div class="footer__social-ico d-flex gap-4 mt-3">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa-brands fa-behance" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom text-center">
+                <p>
+                    Copyright ©2023 All rights reserved | This template is made with
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    by <span> ENG/ Abdo Boeriy</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer Section -->
+    <!-- login alert -->
+    <div class="login-alert">
+        <div class="alert-body">
+            <p class="alert-decription">we are happy to log in to add a product to your cart</p>
+            <div class="d-flex justify-content-around">
+                <button class="main-btn" id="loginAccept">ok</button>
+                <button class="main-btn" id="loginReject">not now</button>
+            </div>
+        </div>
+    </div>
+    <!-- delete alert -->
+    <div class="delete-alert">
+        <div class="alert-body">
+            <p class="alert-decription">Are you sure to delete this product from the cart?</p>
+            <div class="d-flex justify-content-around">
+                <button class="main-btn" id="deleteAccept">yes i'm sure</button>
+                <button class="main-btn" id="deleteReject">no</button>
+            </div>
+        </div>
+    </div>
+    <!-- delete alert -->
+
+    <!-- Bootstrap v5.3.0 js -->
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Free v6.4.2 js -->
+    <script src="js/vendor/all.min.js"></script>
+    <!-- js file -->
+    <script src="js/app.js"></script>
+    <!-- cart js -->
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

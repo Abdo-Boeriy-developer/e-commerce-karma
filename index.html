@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Karma Shop</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/image/favico.ico" type="image/x-icon">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap v5.3.0 css -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <!-- Font Awesome Free v6.4.2 css -->
+    <link rel="stylesheet" href="css/vendor/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Start header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/image/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category.html">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item" id="login-btn">
+                            <a class="nav-link" href="login.html">
+                                LOGIN
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-row align-items-center">
+                        <li class="nav-item nav-item--cart">
+                            <a class="nav-link " href="cart.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-item--search">
+                            <button class="btn nav-link" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                                <i class="fa fa-search"></i></button>
+                        </li>
+                    </ul>
+                    <div class="offcanvas nav-bar--search-filed offcanvas-start" data-bs-scroll="true"
+                        data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+                        aria-labelledby="offcanvasScrollingLabel">
+                        <div class="container h-100">
+                            <div class="d-flex h-100 align-items-center">
+                                <input type="text" placeholder="Search Here"
+                                    class="w-100 h-100 bg-transparent border-0 text-white fs-4">
+                                <a href="#"><i class="fa fa-search text-white" aria-hidden="true"></i></a>
+                                <button type="button" class="btn fs-4 text-white ms-3" data-bs-dismiss="offcanvas"
+                                    aria-label="Close">X</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header Section -->
+    <!-- Start banner section -->
+    <section class="banner__section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6">
+                    <div class="banner__content">
+                        <h1 class="banner__heading">Nike New <br> Collection!</h1>
+                        <p class="banner__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        <div class="banner__btn--add d-flex align-items-center">
+                            <a href="#"><i class="fa fa-plus"></i></a>
+                            <p>ADD TO BAG</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 d-none d-lg-block">
+                    <div class="banner__img">
+                        <img src="assets/image/banner-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End banner section -->
+    <!-- Start Features Section -->
+    <section class="features__section section-padding">
+        <div class="container">
+            <div class="features__inner">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 ">
+                        <div class="feature__content text-center">
+                            <div class="feature__content--img">
+                                <img src="assets/image/f-icon1.png" alt="">
+                            </div>
+                            <div class="feature__content--text">
+                                <h3 class="feature__title">Free Delivery</h3>
+                                <p class="feature__description">Free Shipping on all order</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature__content text-center">
+                            <div class="feature__content--img">
+                                <img src="assets/image/f-icon2.png" alt="">
+                            </div>
+                            <div class="feature__content--text">
+                                <h3 class="feature__title">Return Policy</h3>
+                                <p class="feature__description">Free Shipping on all order</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature__content text-center">
+                            <div class="feature__content--img">
+                                <img src="assets/image/f-icon3.png" alt="">
+                            </div>
+                            <div class="feature__content--text">
+                                <h3 class="feature__title">24/7 Support</h3>
+                                <p class="feature__description">Free Shipping on all order</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature__content text-center">
+                            <div class="feature__content--img">
+                                <img src="assets/image/f-icon4.png" alt="">
+                            </div>
+                            <div class="feature__content--text">
+                                <h3 class="feature__title">Secure Payment</h3>
+                                <p class="feature__description">Free Shipping on all order</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Features Section -->
+    <!-- Start category Section -->
+    <section class="category__section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="category__img">
+                                <img src="assets/image/c1.jpg" alt="">
+                                <div class="overlay"></div>
+                                <a href="#" class="category__link">SNEAKER FOR SPORTS</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="category__img">
+                                <img src="assets/image/c2.jpg" alt="">
+                                <div class="overlay"></div>
+                                <a href="#" class="category__link">SNEAKER FOR SPORTS</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="category__img">
+                                <img src="assets/image/c3.jpg" alt="">
+                                <div class="overlay"></div>
+                                <a href="#" class="category__link">SNEAKER FOR SPORTS</a>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="category__img">
+                                <img src="assets/image/c4.jpg" alt="">
+                                <div class="overlay"></div>
+                                <a href="#" class="category__link">SNEAKER FOR SPORTS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="category__img">
+                        <img src="assets/image/c5.jpg" alt="">
+                        <div class="overlay"></div>
+                        <a href="#" class="category__link">SNEAKER FOR SPORTS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End category Section -->
+    <!-- Start Products Section -->
+    <section class="products__section">
+        <div class="container">
+            <button class="btn products__control products__control--prev">
+                <img src="assets/image/prev (1).png" alt="">
+            </button>
+            <button class="btn products__control products__control--next">
+                <img src="assets/image/next (1).png" alt="">
+            </button>
+            <div class="products__slider">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section__title text-center">
+                            <h1>Latest Products</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="productsRow">
+                    <!-- js fill here -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Products Section -->
+    <!-- Start Exclusive Deal Section -->
+    <section class="exclusive__section">
+        <div class="container-fluid p-0">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6">
+                    <div class="exclusive__left">
+                        <div class="col-md-10 m-auto p-3">
+                            <div class="exclusive__title">
+                                <h1>Exclusive Hot Deal Ends Soon!</h1>
+                                <p>Who are in extremely love with eco friendly system.</p>
+                            </div>
+                            <div class="exclusive__timer">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="exclusive__timer--col">
+                                            <h2 id="days"></h2>
+                                            <span>Days</span>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="exclusive__timer--col">
+                                            <h2 id="hours"></h2>
+                                            <span>Hours</span>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="exclusive__timer--col">
+                                            <h2 id="mins"></h2>
+                                            <span>Mins</span>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="exclusive__timer--col">
+                                            <h2 id="secs"></h2>
+                                            <span>Secs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="exclusive__btn">shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="exclusive__right">
+                        <button
+                            class="btn d-none d-md-block exclusive-products__control exclusive-products__control--prev">
+                            <img src="assets/image/prev (1).png" alt="">
+                        </button>
+                        <button
+                            class="btn d-none d-md-block exclusive-products__control exclusive-products__control--next">
+                            <img src="assets/image/next (1).png" alt="">
+                        </button>
+                        <div class="exclusive-product__slider">
+                            <div class="exclusive__product text-center">
+                                <img src="assets/image/e-p1.png" alt="">
+                                <div class="product__price d-flex justify-content-center">
+                                    <h6>$ 150.00</h6>
+                                    <p class="text-decoration-line-through">$ 210.00</p>
+                                </div>
+                                <h2 class="exclusive__product--title">
+                                    addidas New Hammer sole for Sports person
+                                </h2>
+                                <div class="exclusive__add-btn align-items-center d-flex justify-content-center">
+                                    <a href="#"><i class="fa-solid fa-briefcase"></i></a>
+                                    <p>add to bag</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Exclusive Deal Section -->
+    <!-- Start Brand Section -->
+    <section class="brand__section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <a href="#" class="single__brand">
+                        <img src="assets/image/1.png" alt="">
+                    </a>
+                </div>
+                <div class="col single__brand">
+                    <a href="#">
+                        <img src="assets/image/2.png" alt="">
+                    </a>
+                </div>
+                <div class="col single__brand">
+                    <a href="#">
+                        <img src="assets/image/3.png" alt="">
+                    </a>
+                </div>
+                <div class="col single__brand">
+                    <a href="#">
+                        <img src="assets/image/4.png" alt="">
+                    </a>
+                </div>
+                <div class="col single__brand">
+                    <a href="#">
+                        <img src="assets/image/5.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Brand Section -->
+    <!-- Start Deals Section -->
+    <section class="deals__section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section__title text-center">
+                        <h1>Deals of the Week</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="row gy-4">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single__dea d-flex align-items-center gap-3">
+                                <div class="single__deal--img">
+                                    <img src="assets/image/r1.jpg" alt="">
+                                </div>
+                                <div class="single__deal--desc">
+                                    <h4>Black lace heels</h4>
+                                    <div class="product__price d-flex justify-content-center">
+                                        <h6>$ 150.00</h6>
+                                        <p class="text-decoration-line-through">$ 210.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single__dea d-flex align-items-center gap-3">
+                                <div class="single__deal--img">
+                                    <img src="assets/image/r2.jpg" alt="">
+                                </div>
+                                <div class="single__deal--desc">
+                                    <h4>Black lace heels</h4>
+                                    <div class="product__price d-flex justify-content-center">
+                                        <h6>$ 150.00</h6>
+                                        <p class="text-decoration-line-through">$ 210.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single__dea d-flex align-items-center gap-3">
+                                <div class="single__deal--img">
+                                    <img src="assets/image/r3.jpg" alt="">
+                                </div>
+                                <div class="single__deal--desc">
+                                    <h4>Black lace heels</h4>
+                                    <div class="product__price d-flex justify-content-center">
+                                        <h6>$ 150.00</h6>
+                                        <p class="text-decoration-line-through">$ 210.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single__dea d-flex align-items-center gap-3">
+                                <div class="single__deal--img">
+                                    <img src="assets/image/r10.jpg" alt="">
+                                </div>
+                                <div class="single__deal--desc">
+                                    <h4>Black lace heels</h4>
+                                    <div class="product__price d-flex justify-content-center">
+                                        <h6>$ 150.00</h6>
+                                        <p class="text-decoration-line-through">$ 210.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single__dea d-flex align-items-center gap-3">
+                                <div class="single__deal--img">
+                                    <img src="assets/image/r5.jpg" alt="">
+                                </div>
+                                <div class="single__deal--desc">
+                                    <h4>Black lace heels</h4>
+                                    <div class="product__price d-flex justify-content-center">
+                                        <h6>$ 150.00</h6>
+                                        <p class="text-decoration-line-through">$ 210.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single__dea d-flex align-items-center gap-3">
+                                <div class="single__deal--img">
+                                    <img src="assets/image/r6.jpg" alt="">
+                                </div>
+                                <div class="single__deal--desc">
+                                    <h4>Black lace heels</h4>
+                                    <div class="product__price d-flex justify-content-center">
+                                        <h6>$ 150.00</h6>
+                                        <p class="text-decoration-line-through">$ 210.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single__dea d-flex align-items-center gap-3">
+                                <div class="single__deal--img">
+                                    <img src="assets/image/r7.jpg" alt="">
+                                </div>
+                                <div class="single__deal--desc">
+                                    <h4>Black lace heels</h4>
+                                    <div class="product__price d-flex justify-content-center">
+                                        <h6>$ 150.00</h6>
+                                        <p class="text-decoration-line-through">$ 210.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single__dea d-flex align-items-center gap-3">
+                                <div class="single__deal--img">
+                                    <img src="assets/image/r11.jpg" alt="">
+                                </div>
+                                <div class="single__deal--desc">
+                                    <h4>Black lace heels</h4>
+                                    <div class="product__price d-flex justify-content-center">
+                                        <h6>$ 150.00</h6>
+                                        <p class="text-decoration-line-through">$ 210.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="single__dea d-flex align-items-center gap-3">
+                                <div class="single__deal--img">
+                                    <img src="assets/image/r9.jpg" alt="">
+                                </div>
+                                <div class="single__deal--desc">
+                                    <h4>Black lace heels</h4>
+                                    <div class="product__price d-flex justify-content-center">
+                                        <h6>$ 150.00</h6>
+                                        <p class="text-decoration-line-through">$ 210.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="deal__img">
+                        <img src="assets/image/c5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Deals Section -->
+    <!-- Start footer Section -->
+    <footer class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single__footer--widget">
+                        <h6>About Us</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single__footer--widget">
+                        <h6>Newsletter</h6>
+                        <p>Stay update with our latest</p>
+                        <form action="#">
+                            <div class="d-flex mt-3">
+                                <input type="email" name="" id="">
+                                <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single__footer--widget">
+                        <h6>Instragram Feed</h6>
+                        <ul class="d-flex flex-wrap ">
+                            <li><img src="assets/image/i1.jpg" alt=""></li>
+                            <li><img src="assets/image/i2.jpg" alt=""></li>
+                            <li><img src="assets/image/i3.jpg" alt=""></li>
+                            <li><img src="assets/image/i4.jpg" alt=""></li>
+                            <li><img src="assets/image/i5.jpg" alt=""></li>
+                            <li><img src="assets/image/i6.jpg" alt=""></li>
+                            <li><img src="assets/image/i7.jpg" alt=""></li>
+                            <li><img src="assets/image/i8.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="single__footer--widget">
+                        <h6>Follow Us</h6>
+                        <p>Let us be social</p>
+                        <div class="footer__social-ico d-flex gap-4 mt-3">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa-brands fa-behance" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom text-center">
+                <p>
+                    Copyright ©2023 All rights reserved | This template is made with
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                    by <span> ENG/ Abdo Boeriy</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer Section -->
+    <div class="login-alert">
+        <div class="alert-body">
+            <p class="alert-decription">we are happy to log in to add a product to your cart</p>
+            <div class="d-flex justify-content-around">
+                <button class="main-btn" id="loginAccept">ok</button>
+                <button class="main-btn" id="loginReject">not now</button>
+            </div>
+        </div>
+    </div>
+    <div class="add-cart-check">
+        <p>add done to cart <i class="fa fa-check" aria-hidden="true"></i></p>
+    </div>
+
+    <!-- Bootstrap v5.3.0 js -->
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Free v6.4.2 js -->
+    <script src="js/vendor/all.min.js"></script>
+    <!-- js file -->
+    <script src="js/app.js"></script>
+    <!-- home js -->
+    <script src="js/home.js"></script>
+</body>
+
+</html>
